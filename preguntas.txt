@@ -1,0 +1,17 @@
+1- ¿En que consiste el principio de buen diseño Dependency Inversion?
+El Principio de Inversión de la Dependencia (Dependency Inversion Principle, DIP) es uno de los cinco principios que componen SOLID (Single responsibility, Open-closed, Liskov substitution, Interface segregation and Dependency inversion). Estos principios son considerados los pilares básicos de la programación orientada a objetos que todo desarrollador debería conocer para conseguir sistemas de calidad, reutilizables, tolerantes al cambio, desacoplados y testeables.
+Este principio indica lo siguiente:
+- Los módulos de alto nivel no deberían depender de los de bajo nivel, ambos deberían depender de abstracciones.
+- Las abstracciones no deben depender de los detalles, los detalles deben depender de las abstracciones.
+
+La principal ventaja de aplicar este principio es la flexibilidad que nos aporta. Cuando estamos haciendo test, podemos reemplazar dependencias reales por objetos dobles que se comportan de forma dirigida para para el test.
+
+Esta flexibilidad también nos aporta más escalabilidad ya que vamos a poder sustituir componentes sin que los clientes que los consumen se vean afectados ya que dependen de la abstracción y no de la implementación concreta.
+
+Otro punto importante del principio es que las los detalles dependen de las abstracciones y no al revés. Es fundamental que la abstracción se defina en base a las necesidades del cliente y no en las capacidades de la implementación, de lo contrarío la abstracción estaría bastante acoplada a la implementación y teniendo así menos flexibilidad.
+
+Aplicando el Principio de Inversión de Dependencia estamos haciendo nuestro código más flexible y escalable de forma que podemos realizar cambios sin afectar a otras partes. Básicamente lo que conseguimos es ocultar los detalles de implementación.
+
+
+2- ¿Que caracteristicas tiene un buen codigo o codigo limpio?
+Cuando hablamos de un código limpio, nos referimos a estilo de desarrollo centrado en el lector, un software que sea fácil de leer, escribir y mantener. El código limpio es uno fácil de entender y cambiar, y menos propenso a los errores.
